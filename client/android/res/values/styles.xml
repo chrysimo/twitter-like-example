@@ -1,0 +1,188 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Holo">
+        <item name="it.demo.twitterlike.android.ui:autoScaleTextViewStyle">@style/autoScaleTextView</item>
+    </style>
+    
+       <style name="UserSelectorRowContent">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/adapter_package_row_height_list</item>
+        <item name="android:background">@color/adapter_package_row_content_background</item>
+        <item name="android:padding">@dimen/adapter_package_row_padding_default</item>
+    </style>
+
+    <style name="UserSelectorRowContentImage">
+        <item name="android:layout_width">@dimen/adapter_package_row_size_list_image</item>
+        <item name="android:layout_height">@dimen/adapter_package_row_size_list_image</item>
+        <item name="android:scaleGravity">fill</item>
+        <item name="android:layout_marginRight">@dimen/adapter_package_row_padding_default</item>
+    </style>
+
+    <style name="UserSelectorRowContentTitle">
+        <item name="android:paddingBottom">@dimen/adapter_package_row_padding_default</item>
+        <item name="android:textColor">@color/adapter_package_row_text_title</item>
+        <item name="android:textSize">@dimen/adapter_package_row_font_size_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    
+    
+
+    <style name="OrderListPageContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    
+    
+     <style name="OrderListActionIcons">
+        <item name="android:layout_width">@dimen/order_list_action_image_size</item>
+        <item name="android:layout_height">@dimen/order_list_action_image_size</item>
+        <item name="android:scaleGravity">fill</item>
+        <item name="android:layout_marginRight">@dimen/padding_default</item>
+    </style>
+    
+     <style name="OrderListSupplierDescription">
+     
+        <item name="android:textColor">@color/text_title</item>
+    </style>
+    
+     <style name="WizardPageContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    
+    
+    
+    
+
+    <style name="Widget.ActionButton" parent="android:Widget.Holo.Light.ActionButton"></style>
+
+    <style name="ListItemWizardContent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/padding_default</item>
+    </style>
+
+    <!-- Standard configuration for the AutoScaleTextView -->
+    <style name="autoScaleTextView">
+
+        <!-- some graphical improvements just for the demo. feel free to remove -->
+        <item name="@android:attr/background">@drawable/border</item>
+        <item name="@android:attr/padding">5dp</item>
+        <item name="@android:attr/gravity">center</item>
+
+        <!-- use the next line to alter the minimum text size (uncomment first) -->
+        <!-- <item name="@attr/minTextSize">10dp</item> -->
+    </style>
+
+    <style name="LoginFormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="TextAppearanceFinish" parent="android:TextAppearance.Holo.Medium">
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="ListBackContent">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/background_item</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ListFrontContent">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/height_list</item>
+        <item name="android:background">@color/background_list_front</item>
+        <item name="android:padding">@dimen/padding_default</item>
+    </style>
+
+    <style name="ListImage">
+        <item name="android:layout_width">@dimen/size_list_image</item>
+        <item name="android:layout_height">@dimen/size_list_image</item>
+        <item name="android:scaleGravity">fill</item>
+        <item name="android:layout_marginRight">@dimen/padding_default</item>
+    </style>
+
+    <style name="ListTitle">
+        <item name="android:paddingBottom">@dimen/padding_default</item>
+        <item name="android:textSize">@dimen/font_size_title</item>
+        <item name="android:textColor">@color/text_title</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="ListDescription">
+        <item name="android:textColor">@color/text_description</item>
+        <item name="android:textSize">@dimen/font_size_description</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="ActionButton">
+        <item name="android:textSize">@dimen/font_size_description</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="ListButtonAction">
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <!-- Settings -->
+
+    <style name="SettingTitle">
+        <item name="android:textColor">@color/text_title</item>
+        <item name="android:textSize">@dimen/font_size_title</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SettingContent">
+        <item name="android:paddingBottom">@dimen/padding_default</item>
+        <item name="android:layout_marginLeft">@dimen/margin_setting</item>
+    </style>
+
+    <style name="SettingText">
+        <item name="android:textColor">@color/text_description</item>
+        <item name="android:textSize">@dimen/font_size_description</item>
+        <item name="android:layout_marginRight">@dimen/margin_default</item>
+    </style>
+
+    <style name="Line">
+        <item name="android:background">@color/line</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/line_default</item>
+    </style>
+
+    
+
+    <style name="WizardPageTitle">
+        <item name="android:id">@android:id/title</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:paddingLeft">?android:attr/listPreferredItemPaddingLeft</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">#ff0099cc</item>
+    </style>
+
+    <style name="WizardFormLabel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@color/text_light</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:paddingLeft">12dp</item>
+        <item name="android:paddingRight">12dp</item>
+    </style>
+
+</resources>

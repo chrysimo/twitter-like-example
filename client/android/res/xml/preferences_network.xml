@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+ 
+    <PreferenceCategory android:title="@string/pref_network_setting_title" >
+        
+         <ListPreference
+            android:key="pref_network_protocol"
+              android:defaultValue="@string/network_server_protocol"
+            android:entries="@array/pref_network_protocol_values"
+            android:summary="@string/pref_network_protocol_summary"
+            android:entryValues="@array/pref_network_protocol_values"
+            android:title="@string/pref_network_protocol" />
+      
+        <EditTextPreference
+                android:title="@string/pref_network_hostname"
+                android:defaultValue="@string/network_server_hostname"
+                android:summary="@string/pref_network_hostname_summary"
+                android:key="pref_network_hostname"/>    
+    
+         <ListPreference
+            android:key="pref_network_port"
+              android:defaultValue="@string/network_server_port"
+            android:entries="@array/pref_network_port_values"
+            android:summary="@string/pref_network_port_summary"
+            android:entryValues="@array/pref_network_port_values"
+            android:title="@string/pref_network_port" />
+      
+          <EditTextPreference
+                android:title="@string/pref_network_context"
+                 android:defaultValue="@string/network_server_context"
+                android:summary="@string/pref_network_context_summary"
+                android:key="pref_network_context"/>
+          
+    </PreferenceCategory>
+</PreferenceScreen>

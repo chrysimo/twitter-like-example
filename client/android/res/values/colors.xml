@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="adapter_package_row_content_background">#ffffff</color>
+      <color name="adapter_package_row_text_title">#444444</color>
+    <color name="adapter_package_row_text_description">#7e7e7e</color>
+    
+    
+    <color name="blue">#f00f</color>
+    <color name="white">#ffff</color>
+    <color name="background_app">#dedede</color>
+    <color name="text_title">#444444</color>
+    <color name="text_description">#7e7e7e</color>
+    <color name="line">#ffbcbcbc</color>
+    <color name="background_new_tag">#ff0000</color>
+    <color name="text_new_tag">#ffffff</color>
+    <color name="background">#F9F9F9</color>
+    <color name="text_light">#66000000</color>
+    <color name="step_pager_previous_tab_color">#4433b5e5</color>
+    <color name="step_pager_selected_tab_color">#ff0099cc</color>
+    <color name="step_pager_selected_last_tab_color">#ff669900</color>
+    <color name="step_pager_next_tab_color">#10000000</color>
+    <color name="review_green">#ff669900</color>
+    <color name="green">#ff669900</color>
+    <color name="background_list_back">#e3e3e3</color>
+    <color name="background_list_front">#ffffff</color>
+    <color name="order_list_item_background_color_noteditable">@color/background_list_back</color>
+    <color name="order_list_item_background_color_editable">@color/background_list_front</color>
+
+</resources>

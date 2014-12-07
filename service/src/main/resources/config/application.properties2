@@ -1,0 +1,25 @@
+app.name=MyApp
+app.description=${app.name} is a Spring Boot application
+
+#if both basic and oauth2 profiles are disabled this property disable spring security because enable FallbackWebSecurityAutoConfiguration bean
+security.basic.enabled=false
+
+
+endpoints.shutdown.enabled=true
+endpoints.refresh.enabled=true
+endpoints.restart.enabled=true
+spring.jpa.hibernate.ddl-auto=create-drop
+
+spring.thymeleaf.cache: false
+logging.level.org.springframework.security: DEBUG
+logging.level.org.springframework.cloud: TRACE
+spring.data.rest.baseUri=/api/admin/
+server.port=8081  
+
+spring.mail.host=sdfds.tai.it
+spring.mail.from=noreply@tai.it
+
+
+
+#spring.profiles.active=security-oauth2
+

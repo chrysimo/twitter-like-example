@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            style="@style/UserSelectorRowContent">
+     
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                style="@style/ListDescription"
+                android:id="@+id/tvUserFirstName"/>
+        
+          <TextView
+            android:id="@+id/tvMessageUpdateTime"
+            style="@style/ListDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true" />
+          
+        
+         <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvUserFirstName"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                style="@style/UserSelectorRowContentTitle"
+                android:id="@+id/tvUserMessage"/>
+
+        
+         
+           
+
+    </RelativeLayout>

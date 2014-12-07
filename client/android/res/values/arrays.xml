@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="pref_network_protocol_values">
+        <item name="http">http</item>
+        <item name="https">https</item>
+    </string-array>
+    
+    
+    <string-array name="pref_server_syncronization_time_values">
+        <item name="1">1</item>
+        <item name="2">2</item>
+        <item name="3">4</item>
+        <item name="4">4</item>
+        <item name="5">5</item>
+    </string-array>
+   
+    <string-array name="pref_network_port_values">
+        <item name="80">80</item>
+        <item name="443">443</item>
+        <item name="8080">8080</item>
+         <item name="8081">8081</item>
+    </string-array>
+
+</resources>

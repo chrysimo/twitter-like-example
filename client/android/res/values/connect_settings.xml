@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ordermanagement_app_id">acme</string>
+    <string name="ordermanagement_app_secret">acmesecret</string>
+    <string name="account_default_username"></string>
+     <string name="account_default_password"></string>
+    <string name="network_server_protocol">http</string>
+   
+    <string name="network_server_hostname">192.168.1.16</string>
+    <!--    <string name="network_server_hostname">192.168.1.39</string> -->
+    <string name="network_server_port">8080</string>
+    <string name="network_connection_timeout">10000</string>
+     <string name="network_server_context">console</string>
+   
+    <string name="ordermanagement_scope">read</string>
+</resources>

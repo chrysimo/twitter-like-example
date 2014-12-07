@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+   
+    
+    <item
+        android:id="@+id/menu_submenu"
+        android:icon="@drawable/ic_action_overflow"
+        android:showAsAction="ifRoom"
+        android:title="@string/menu_submenu">
+        <menu>
+            <item
+                android:id="@+id/menu_settings"
+                android:icon="@drawable/action_bar_icon_settings"
+                android:showAsAction="ifRoom|withText"
+                android:title="@string/settings"/>
+        </menu>
+    </item>
+
+</menu>

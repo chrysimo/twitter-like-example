@@ -1,0 +1,40 @@
+spring:
+    profiles: prod,security-oauth2
+    
+    datasource:
+        dataSourceClassName: org.h2.jdbcx.JdbcDataSource
+        url: jdbc:h2:~/twitterlike
+        databaseName: 
+        serverName: 
+        username: 
+        password: 
+        initialize: true
+    jpa:
+        database-platform: org.hibernate.dialect.H2Dialect
+        database: H2
+        openInView: true
+        show_sql: true
+        generate-ddl: false
+        hibernate:
+            ddl-auto: create
+            naming-strategy: org.hibernate.cfg.EJB3NamingStrategy
+        properties:
+            hibernate.cache.use_second_level_cache: true
+            hibernate.cache.use_query_cache: false
+            hibernate.generate_statistics: true
+            hibernate.cache.region.factory_class: org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory
+            
+
+    mail:
+        baseUrl: http://localhost:${server.port}
+
+    thymeleaf:
+        mode: XHTML
+        cache: true
+        viewNames: error
+
+
+cache:
+    timeToLiveSeconds: 3600
+    ehcache:
+        maxBytesLocalHeap: 256M

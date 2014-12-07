@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+      <groupId>it.demo.twitterlike</groupId>
+        <artifactId>twitterlike-parent</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+    <name>TwitterLike - Parent</name>
+
+    <modules>
+	 <module>client</module>
+        <module>service</module> 
+		 <module>client/android</module>
+    </modules>
+
+	<dependencyManagement>
+    <dependencies>
+ 		
+		
+				<dependency>
+	<groupId>junit</groupId>
+	<artifactId>junit</artifactId>
+	<version>${junit.version}</version>
+</dependency>
+</dependencies>
+</dependencyManagement>
+    <dependencies>
+       
+    </dependencies>
+    <build>
+        <plugins>
+            
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>2.3.1</version>
+                <!-- The configuration of the plugin -->
+                <configuration>
+                    <archive>
+                        <!-- Manifest specific configuration -->
+                        <manifest>
+                            <!-- Classpath is added to the manifest of the created jar file. -->
+                            <addClasspath>true</addClasspath>
+                        </manifest>
+                        <manifestEntries>
+                            <Specification-Title>${project.name}</Specification-Title>
+                            <Specification-Version>${project.version}</Specification-Version>
+                            <Implementation-Title>${project.name}</Implementation-Title>
+                            <Implementation-Version>${system.version}</Implementation-Version>
+                        </manifestEntries>
+                    </archive>
+                </configuration>
+            </plugin>
+        </plugins>
+        <pluginManagement>
+            <plugins>
+			
+			
+            <plugin>
+                <groupId>com.google.code.sortpom</groupId>
+                <artifactId>maven-sortpom-plugin</artifactId>
+                <version>${maven-sortpom-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>sort</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <sortProperties>true</sortProperties>
+                    <nrOfIndentSpace>4</nrOfIndentSpace>
+                    <sortDependencies>groupId,artifactId</sortDependencies>
+                    <sortPlugins>groupId,artifactId</sortPlugins>
+                    <keepBlankLines>true</keepBlankLines>
+                    <expandEmptyElements>false</expandEmptyElements>
+                </configuration>
+            </plugin>
+			
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+
+                    <configuration>
+                        <source>${java.version}</source>
+                        <target>${java.version}</target>
+                        <showWarnings>true</showWarnings>
+                        <compilerArguments>
+                            <Xlint />
+                            <XDignore.symbol.file/>
+                        </compilerArguments>
+                    </configuration>
+                </plugin>
+
+
+
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-eclipse-plugin</artifactId>
+
+                    <configuration>
+                        <downloadSources>true</downloadSources>
+                        <downloadJavadocs>true</downloadJavadocs>
+                    </configuration>
+                </plugin>
+
+            </plugins>
+        </pluginManagement>
+       
+    </build>
+    <properties>
+        <project_version>1.0</project_version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- Test dependencies -->
+        <junit.version>4.11</junit.version>
+        <java.version>1.6</java.version>
+		<maven-sortpom-plugin.version>2.3.0</maven-sortpom-plugin.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <system.version>0.1</system.version>
+    </properties>
+
+
+</project>

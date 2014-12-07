@@ -1,0 +1,4 @@
+<resources>
+    <style name="Theme.SwipeListView" parent="android:style/Theme.Light">
+    </style>
+</resources>

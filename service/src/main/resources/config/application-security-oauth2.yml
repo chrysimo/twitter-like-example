@@ -1,0 +1,26 @@
+security:
+  ignored:false
+
+  oauth2.server.embedded.enabled:true
+  
+oauth2:
+  sso:
+    loginPath: /dashboard/login
+  client:
+    tokenUri: http://localhost:${server.port}/oauth/token
+    authorizationUri: http://localhost:${server.port}/oauth/authorize
+    clientId: acme
+    clientSecret: acmesecret
+  resource:
+    tokenInfoUri: http://localhost:${server.port}/oauth/check_token
+    id: openid
+    serviceId: ${PREFIX:}resource
+    userInfoUri: https://api.github.com/user
+    preferTokenInfo: false
+    userInfo:
+         mock:
+    #        username:   chrysimo
+    #        grantedAuthorities:  ROLE_USER,ROLE_ADMIN
+    server: 
+          embedded:
+               enabled: true

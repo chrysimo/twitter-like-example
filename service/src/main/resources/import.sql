@@ -1,0 +1,7 @@
+insert into t_authority (name) values ('ROLE_ADMIN')
+insert into t_authority (name) values ('ROLE_USER')
+insert into t_user(login, activated, email, first_name, last_name, lang_key, created_date,password) values ('admin', 'true', 'admin@admin.com', 'admin', 'admin', 'it', '2014-12-03 12:19:20.237', '$2a$10$lxFI9e6poCoeh.rgffcFWe7rVEb.M78lfGCyP02.06ICjF4aZBDlu')
+insert into t_user(login, activated, email, first_name, last_name, lang_key, created_date,password) values ('user', 'true', 'user@user.com', 'user', 'user', 'it', '2014-12-03 12:19:20.237', '$2a$10$b9V5Hv/E8lpHK7f2DbcNze0kHd39Jyhne3gqmks7EzvO8CXAH0Coa')
+insert into t_user_authority (login,name) values ('user','ROLE_USER')
+insert into t_user_authority (login,name) values ('admin','ROLE_ADMIN')
+insert into t_user_authority (login,name) values ('admin','ROLE_USER')

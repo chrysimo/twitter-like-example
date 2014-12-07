@@ -1,0 +1,76 @@
+server:
+    port: 8081
+
+info:
+  component: Twitter Like Application
+  
+management:
+      context-path: /rest/api/admin
+      security:
+           enabled: false	  
+endpoints:
+  shutdown:
+     enabled: true
+  restart:
+    enabled: true  
+
+
+#if both basic and oauth2 profiles are disabled this property disable spring security because enable FallbackWebSecurityAutoConfiguration bean
+security:
+    basic:
+       enabled: false
+#spring.profiles.active=security-oauth2
+# security configuration (this key should be unique for your application, and kept secret)
+custom.security.rememberme.key: jhipster
+
+spring:
+    profiles: 
+       include: security-oauth2
+   
+    mail:
+        host: localhost
+        port: 25
+        user:
+        password:
+        protocol: smtp
+        tls: false
+        auth: false
+        from: noreplay@tai.it
+        baseUrl: http://localhost:8081
+    messages:
+        basename: i18n/messages
+        cache-seconds: 5
+    
+    data:
+        rest:
+          baseUri: /api/admin	
+
+    jmx:
+       enabled: false
+metrics:
+    jmx:
+        enabled: false
+    graphite:
+        enabled: false
+        host: localhost
+        port: 2003
+        prefix: twitterlike
+
+cache:
+    timeToLiveSeconds: 3600
+    ehcache:
+        maxBytesLocalHeap: 16M
+swagger:
+    title: Twitter Like Example Application
+    description: Twitter Like Example Application
+    termsOfServiceUrl: 
+    contact:
+    license: Apache 2.0
+    licenseUrl: http://www.apache.org/licenses/LICENSE-2.0.html
+    
+logging:
+  levels:
+    org.springframework.boot.env.PropertySourcesLoader: TRACE
+    org.springframework.web: TRACE
+    org.springframework.security: TRACE
+    org.springframework.cloud: TRACE
