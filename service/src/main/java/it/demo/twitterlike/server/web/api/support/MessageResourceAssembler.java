@@ -1,11 +1,11 @@
-package it.demo.twitterlike.server.web.rest.support;
+package it.demo.twitterlike.server.web.api.support;
 
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 import it.demo.twitterlike.server.domain.Message;
-import it.demo.twitterlike.server.web.rest.MessageRestController;
-import it.demo.twitterlike.server.web.rest.UserRestController;
-import it.demo.twitterlike.server.web.rest.domain.MessageResource;
+import it.demo.twitterlike.server.web.api.MessageRestController;
+import it.demo.twitterlike.server.web.api.UserRestController;
+import it.demo.twitterlike.server.web.api.domain.MessageResource;
 
 import org.springframework.hateoas.ResourceAssembler;
 import org.springframework.stereotype.Component;

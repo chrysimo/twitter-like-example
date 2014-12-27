@@ -1,7 +1,7 @@
-package it.demo.twitterlike.server.web.rest.admin;
+package it.demo.twitterlike.server.web.api.admin;
 
-import it.demo.twitterlike.server.web.rest.ApiEndpoints;
-import it.demo.twitterlike.server.web.rest.dto.LoggerDTO;
+import it.demo.twitterlike.server.web.api.ApiEndpoints;
+import it.demo.twitterlike.server.web.api.dto.LoggerDTO;
 
 import java.util.List;
 import java.util.stream.Collectors;

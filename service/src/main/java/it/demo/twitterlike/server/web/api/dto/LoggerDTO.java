@@ -1,4 +1,4 @@
-package it.demo.twitterlike.server.web.rest.dto;
+package it.demo.twitterlike.server.web.api.dto;
 
 import ch.qos.logback.classic.Logger;
 

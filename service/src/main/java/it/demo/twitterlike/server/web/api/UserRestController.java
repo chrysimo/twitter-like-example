@@ -1,4 +1,4 @@
-package it.demo.twitterlike.server.web.rest;
+package it.demo.twitterlike.server.web.api;
 
 import it.demo.twitterlike.server.domain.Message;
 import it.demo.twitterlike.server.domain.User;
@@ -6,10 +6,10 @@ import it.demo.twitterlike.server.repository.MessageRepository;
 import it.demo.twitterlike.server.repository.UserRepository;
 import it.demo.twitterlike.server.repository.utils.RepositoryUtils;
 import it.demo.twitterlike.server.service.UserService;
-import it.demo.twitterlike.server.web.rest.domain.MessageResource;
-import it.demo.twitterlike.server.web.rest.domain.UserResource;
-import it.demo.twitterlike.server.web.rest.support.MessageResourceAssembler;
-import it.demo.twitterlike.server.web.rest.support.UserResourceAssembler;
+import it.demo.twitterlike.server.web.api.domain.MessageResource;
+import it.demo.twitterlike.server.web.api.domain.UserResource;
+import it.demo.twitterlike.server.web.api.support.MessageResourceAssembler;
+import it.demo.twitterlike.server.web.api.support.UserResourceAssembler;
 
 import javax.servlet.http.HttpServletResponse;
 
@@ -39,9 +39,9 @@ import com.wordnik.swagger.annotations.ApiResponses;
 
 @RestController
 @RequestMapping(value = ApiEndpoints.API_ENDPOINT_PEOPLE, produces = {
-		"application/hal+json", "application/json" })
-@Api(position = 1, value = "User Rest API", description = "Secured API for managing persons follow list")
-public class UserRestController extends AbstractRestController {
+		"application/hal+json", "application/json" , "application/xml"})
+@Api( position = 1, value = "User Rest API", description = "Secured API for managing persons follow list")
+public class UserRestController extends AbstractApiController {
 
 	private static final String LOGIN_PREFIX = "/{login:.+}";
 

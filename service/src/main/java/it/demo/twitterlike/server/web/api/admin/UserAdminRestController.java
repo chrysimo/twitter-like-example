@@ -1,11 +1,11 @@
-package it.demo.twitterlike.server.web.rest.admin;
+package it.demo.twitterlike.server.web.api.admin;
 
 import it.demo.twitterlike.server.domain.Authority;
 import it.demo.twitterlike.server.domain.User;
 import it.demo.twitterlike.server.repository.AuthorityRepository;
 import it.demo.twitterlike.server.repository.UserRepository;
 import it.demo.twitterlike.server.repository.utils.RepositoryUtils;
-import it.demo.twitterlike.server.web.rest.ApiEndpoints;
+import it.demo.twitterlike.server.web.api.ApiEndpoints;
 
 import java.util.Arrays;
 import java.util.Collection;

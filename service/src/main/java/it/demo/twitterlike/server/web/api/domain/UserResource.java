@@ -1,4 +1,4 @@
-package it.demo.twitterlike.server.web.rest.domain;
+package it.demo.twitterlike.server.web.api.domain;
 
 import it.demo.twitterlike.server.domain.User;
 

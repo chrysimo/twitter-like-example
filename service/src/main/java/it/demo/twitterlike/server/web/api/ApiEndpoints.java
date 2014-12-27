@@ -1,4 +1,4 @@
-package it.demo.twitterlike.server.web.rest;
+package it.demo.twitterlike.server.web.api;
 
 public interface ApiEndpoints {
 

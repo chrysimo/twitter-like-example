@@ -1,13 +1,13 @@
-package it.demo.twitterlike.server.web.rest;
+package it.demo.twitterlike.server.web.api;
 
 import it.demo.twitterlike.server.domain.Message;
 import it.demo.twitterlike.server.domain.User;
 import it.demo.twitterlike.server.repository.MessageRepository;
 import it.demo.twitterlike.server.security.InternalUserDetails;
 import it.demo.twitterlike.server.service.MessageService;
-import it.demo.twitterlike.server.web.rest.domain.MessageResource;
-import it.demo.twitterlike.server.web.rest.support.MessageResourceAssembler;
-import it.demo.twitterlike.server.web.rest.support.UserResourceAssembler;
+import it.demo.twitterlike.server.web.api.domain.MessageResource;
+import it.demo.twitterlike.server.web.api.support.MessageResourceAssembler;
+import it.demo.twitterlike.server.web.api.support.UserResourceAssembler;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
@@ -31,9 +31,9 @@ import com.wordnik.swagger.annotations.Api;
 
 @RestController
 @RequestMapping(value = ApiEndpoints.API_ENDPOINT_MESSAGES, produces = {
-		"application/hal+json", "application/json" })
+		"application/hal+json", "application/json", "application/xml" })
 @Api(position = 2, value = "Messages Rest API", description = "Secured API for managing messages follow list")
-public class MessageRestController extends AbstractRestController {
+public class MessageRestController extends AbstractApiController {
 
 	private final MessageRepository messageRepository;
 

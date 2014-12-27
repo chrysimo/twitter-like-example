@@ -1,4 +1,4 @@
-package it.demo.twitterlike.server.web.rest;
+package it.demo.twitterlike.server.web.api;
 
 import it.demo.twitterlike.server.domain.Authority;
 import it.demo.twitterlike.server.domain.PersistentToken;
@@ -8,7 +8,7 @@ import it.demo.twitterlike.server.repository.UserRepository;
 import it.demo.twitterlike.server.security.SecurityUtils;
 import it.demo.twitterlike.server.service.MailService;
 import it.demo.twitterlike.server.service.UserService;
-import it.demo.twitterlike.server.web.rest.dto.UserDTO;
+import it.demo.twitterlike.server.web.api.dto.UserDTO;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;

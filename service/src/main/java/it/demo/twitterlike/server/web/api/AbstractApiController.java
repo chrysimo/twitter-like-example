@@ -1,11 +1,11 @@
-package it.demo.twitterlike.server.web.rest;
+package it.demo.twitterlike.server.web.api;
 
 import it.demo.twitterlike.server.domain.Message;
 import it.demo.twitterlike.server.domain.User;
-import it.demo.twitterlike.server.web.rest.domain.MessageResource;
-import it.demo.twitterlike.server.web.rest.domain.UserResource;
-import it.demo.twitterlike.server.web.rest.support.MessageResourceAssembler;
-import it.demo.twitterlike.server.web.rest.support.UserResourceAssembler;
+import it.demo.twitterlike.server.web.api.domain.MessageResource;
+import it.demo.twitterlike.server.web.api.domain.UserResource;
+import it.demo.twitterlike.server.web.api.support.MessageResourceAssembler;
+import it.demo.twitterlike.server.web.api.support.UserResourceAssembler;
 
 import java.io.Serializable;
 
@@ -18,7 +18,7 @@ import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 
-public abstract class AbstractRestController {
+public abstract class AbstractApiController {
 
 	public static final String ME_PREFIX = "/me";
 	
@@ -26,7 +26,7 @@ public abstract class AbstractRestController {
 	
 	protected final UserResourceAssembler userResourceAssembler;
 	
-	protected AbstractRestController(MessageResourceAssembler messageResourceAssembler, UserResourceAssembler userResourceAssembler) {
+	protected AbstractApiController(MessageResourceAssembler messageResourceAssembler, UserResourceAssembler userResourceAssembler) {
 		this.messageResourceAssembler = messageResourceAssembler;
 		this.userResourceAssembler = userResourceAssembler;
 	}
